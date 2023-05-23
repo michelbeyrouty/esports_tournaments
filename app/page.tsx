@@ -4,10 +4,10 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <main>
-      <div className="h-screen w-screen rainbow-mesh">
+      <div className="bg-pattern h-screen w-screen">
         <Navbar />
       </div>
-      <div className="h-screen w-screen rainbow-mesh p-6">
+      <div className="h-screen w-screen p-6">
         <GlassPane className="w-full h-full flex items-center justify-center"></GlassPane>
       </div>
     </main>

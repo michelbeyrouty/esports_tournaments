@@ -5,5 +5,16 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: "jit",
+  theme: {
+    extend: {
+      fontFamily: {
+        'press-start': ['"Press Start 2P"', 'cursive'],
+      },
+      backgroundImage: {
+        "pattern": "url('/bg.jpg')",
+      },
+    },
+  },
   plugins: [],
 }
