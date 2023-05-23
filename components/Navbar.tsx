@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar({ children, className }) {
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20">
+    <nav className="w-full flex items-center py-5 fixed top-0 z-20 text-yellow-600 text-[22px]">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
@@ -12,9 +12,7 @@ export default function Navbar({ children, className }) {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex hover:text-red-500">
-            Astro
-          </p>
+          <p className="font-bold cursor-pointer flex">Astro</p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           <li>
