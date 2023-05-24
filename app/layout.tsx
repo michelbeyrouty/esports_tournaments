@@ -1,11 +1,8 @@
 import "styles/globals.css";
-import { Inter, Black_Ops_One } from "next/font/google";
+import { Inter } from "next/font/google";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
-export const blackOpsOne = Black_Ops_One({
-  subsets: ["cyrillic-ext"],
-  weight: "400",
-});
 
 export const metadata = {
   title: "Esports Tournament",
@@ -19,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
