@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 const navigation = [
-  { name: "About us", href: "/about" },
+  // { name: "About us", href: "#about" },
   { name: "Tournaments", href: "/tournaments" },
 ];
 
@@ -36,20 +36,30 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="/login"
-            className="text-sm font-semibold leading-6 text-greeny hover:text-green-600"
-          >
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          <div>
+            <button
+              type="button"
+              className="flex rounded-full text-sm focus:ring-2 focus:ring-greeny focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              <img
+                className="h-8 w-8 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+            </button>
+          </div>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-greeny"
+            className="flex rounded-full text-sm focus:ring-2 focus:ring-greeny focus:ring-offset-2 focus:ring-offset-gray-800"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <img
+              className="h-8 w-8 rounded-full"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
           </button>
         </div>
       </nav>
@@ -72,10 +82,14 @@ export default function Navbar() {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-greeny"
+              className="flex rounded-full text-sm focus:ring-2 focus:ring-greeny focus:ring-offset-2 focus:ring-offset-gray-800"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <img
+                className="h-8 w-8 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
             </button>
           </div>
           <div className="mt-6 flow-root">
