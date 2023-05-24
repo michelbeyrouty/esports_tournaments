@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         greeny: "#388E3C",
-        bg: "rgb(24 24 27)"
+        bg: "#18181B"
       },
       backgroundImage: {
         "pattern": "url('/bg.jpg')",
