@@ -12,7 +12,7 @@ module.exports = {
         'press-start': ['"Press Start 2P"', 'cursive'],
       },
       colors: {
-        greeny: "#34d399",
+        greeny: "#388E3C",
         bg: "rgb(24 24 27)"
       },
       backgroundImage: {

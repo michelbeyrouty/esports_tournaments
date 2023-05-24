@@ -29,7 +29,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-green-700 hover:text-green-600"
+              className="text-sm font-semibold leading-6 text-greeny hover:text-green-600"
             >
               {item.name}
             </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="/login"
-            className="text-sm font-semibold leading-6 text-green-700 hover:text-green-600"
+            className="text-sm font-semibold leading-6 text-greeny hover:text-green-600"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-greeny"
             onClick={() => setMobileMenuOpen(true)}
           >
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -72,7 +72,7 @@ export default function Navbar() {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-green-700"
+              className="-m-2.5 rounded-md p-2.5 text-greeny"
               onClick={() => setMobileMenuOpen(false)}
             >
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -85,7 +85,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-green-700 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-greeny hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-green-700 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-greeny hover:bg-gray-50"
                 >
                   Log in
                 </a>

@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.rainbow-mesh {
-  background-color: #273b40;
-  background-image: radial-gradient(at 40% 20%, #208c8c 0px, transparent 50%),
-    radial-gradient(at 80% 0%, #273b40 0px, transparent 50%),
-    radial-gradient(at 0% 50%, #1d1d1d 0px, transparent 50%),
-    radial-gradient(at 80% 50%, #3c4748 0px, transparent 50%),
-    radial-gradient(at 0% 100%, #3c4748 0px, transparent 50%),
-    radial-gradient(at 80% 100%, #273b40 0px, transparent 50%),
-    radial-gradient(at 0% 0%, #cae9ea 0px, transparent 50%);
+.rainbow-gaming {
+  background-color: #000000;
+  background-image: radial-gradient(at 40% 20%, #000000 0px, transparent 50%),
+    radial-gradient(at 80% 0%, #000000 0px, transparent 50%),
+    radial-gradient(at 0% 50%, #025951 0px, transparent 50%),
+    radial-gradient(at 80% 50%, #9089fc 0px, transparent 50%),
+    radial-gradient(at 0% 100%, #000000 0px, transparent 50%),
+    radial-gradient(at 80% 100%, #000000 0px, transparent 50%),
+    radial-gradient(at 0% 0%, #000000 0px, transparent 50%);
 }
-
-/* from-[#ff80b5] to-[#9089fc] */
