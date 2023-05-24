@@ -7,7 +7,7 @@ export default function Hero() {
             <h1 className="text-4xl font-bold tracking-tight text-greeny sm:text-6xl">
               Unleash Your Gaming Greatness
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-500">
+            <p className="mt-6 text-lg leading-8 text-gray-300">
               Ignite your competitive fire in the electrifying realm of esports
               tournaments, where heroes are born, legends are forged, and glory
               awaits your command. Join the global gaming community and unleash
@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-greeny px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-greeny px-3.5 py-2.5 text-sm font-semibold text-gray-300 shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
