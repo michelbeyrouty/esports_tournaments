@@ -40,14 +40,17 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
+                className="text-sm font-semibold leading-6 text-white hover:text-green-700"
               >
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a
+              href="/login"
+              className="text-sm font-semibold leading-6 text-white hover:text-green-700"
+            >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
