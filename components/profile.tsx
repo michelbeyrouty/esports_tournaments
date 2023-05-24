@@ -4,6 +4,21 @@ import { useState } from "react";
 export default function Profile() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  const menuItems = [
+    {
+      href: "/login",
+      name: "Your profile",
+    },
+    {
+      href: "/login",
+      name: "Settings",
+    },
+    {
+      href: "/login",
+      name: "log in",
+    },
+  ];
+
   return (
     <div className="hidden md:block">
       <div className="ml-4 flex items-center md:ml-6">
@@ -28,24 +43,15 @@ export default function Profile() {
               role="menu"
               aria-orientation="vertical"
             >
-              <a
-                href="/login"
-                className="block px-4 py-2 text-sm text-gray-700"
-              >
-                Your profile
-              </a>
-              <a
-                href="/login"
-                className="block px-4 py-2 text-sm text-gray-700"
-              >
-                Settings
-              </a>
-              <a
-                href="/login"
-                className="block px-4 py-2 text-sm text-gray-700"
-              >
-                Log in
-              </a>
+              {menuItems.map((menuItem) => (
+                <a
+                  href={menuItem.href}
+                  key={menuItem.name}
+                  className="block px-4 py-2 text-sm text-gray-700"
+                >
+                  {menuItem.name}
+                </a>
+              ))}
             </div>
           ) : (
             <div />
