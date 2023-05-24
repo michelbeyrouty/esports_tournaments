@@ -19,8 +19,8 @@ export default function Example() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-auto "
+                src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
                 alt=""
               />
             </a>
@@ -40,7 +40,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white hover:text-green-700"
+                className="text-sm font-semibold leading-6 text-green-700 hover:text-green-600"
               >
                 {item.name}
               </a>
@@ -49,7 +49,7 @@ export default function Example() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="/login"
-              className="text-sm font-semibold leading-6 text-white hover:text-green-700"
+              className="text-sm font-semibold leading-6 text-green-700 hover:text-green-600"
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
