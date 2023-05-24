@@ -20,7 +20,7 @@ export default function Profile() {
   ];
 
   return (
-    <div className="hidden md:block">
+    <div>
       <div className="ml-4 flex items-center md:ml-6">
         <div className="relative ml-3">
           <div>
