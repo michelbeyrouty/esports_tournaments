@@ -1,15 +1,15 @@
 "use client";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 const navigation = [
-  // { name: "About us", href: "#about" },
+  { name: "About us", href: "#about" },
   { name: "Tournaments", href: "/tournaments" },
+  { name: "Login", href: "/login" },
 ];
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -24,18 +24,7 @@ export default function Navbar() {
             />
           </a>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-greeny hover:text-green-600"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="flex flex-1 justify-end">
           <div>
             <button
               type="button"
@@ -49,26 +38,8 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="flex rounded-full text-sm focus:ring-2 focus:ring-greeny focus:ring-offset-2 focus:ring-offset-gray-800"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <img
-              className="h-8 w-8 rounded-full"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-          </button>
-        </div>
       </nav>
-      <Dialog
-        as="div"
-        className="lg:hidden"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-      >
+      <Dialog as="div" className="hidden" open={menuOpen} onClose={setMenuOpen}>
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -83,7 +54,7 @@ export default function Navbar() {
             <button
               type="button"
               className="flex rounded-full text-sm focus:ring-2 focus:ring-greeny focus:ring-offset-2 focus:ring-offset-gray-800"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => setMenuOpen(false)}
             >
               <img
                 className="h-8 w-8 rounded-full"
