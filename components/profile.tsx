@@ -12,9 +12,6 @@ export default function Profile() {
             <button
               type="button"
               className="flex max-w-xs items-center rounded-full bg-blacky text-sm"
-              id="user-menu-button"
-              aria-expanded="false"
-              aria-haspopup="true"
             >
               <img
                 className="h-8 w-8 rounded-full"
@@ -32,22 +29,6 @@ export default function Profile() {
               aria-orientation="vertical"
               aria-labelledby="user-menu-button"
             >
-              <a
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700"
-                role="menuitem"
-                id="user-menu-item-0"
-              >
-                Your Profile
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700"
-                role="menuitem"
-                id="user-menu-item-1"
-              >
-                Settings
-              </a>
               <a
                 href="/login"
                 className="block px-4 py-2 text-sm text-gray-700"
