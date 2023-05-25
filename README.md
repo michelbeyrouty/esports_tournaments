@@ -1,6 +1,6 @@
 ## Introduction
 
-Website built using nextjs and prisma that will allow users to enroll in custom tournaments and receive a prize money if they win.
+Website built using nextjs and prisma that will allow users to enroll in custom tournaments and receive a prize money if they win 💰
 
 ## Getting Started
 
