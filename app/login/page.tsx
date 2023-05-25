@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import Input from "../../components/Input";
+import Label from "../../components/Label";
 import logo from "@/assets/images/logo.png";
+import { useState } from "react";
+
+const initial = { email: "", password: "", firstName: "", lastName: "" };
 
 export default function Login() {
+  const [formState, setFormState] = useState(initial);
+
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div>
@@ -20,32 +29,20 @@ export default function Login() {
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form className="space-y-6" action="#" method="POST">
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium leading-6 text-gray-300"
-            >
-              Email address
-            </label>
-            <div className="mt-2">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="block w-full rounded-md border-0 py-1.5 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
+            <Label>Email address</Label>
+            <Input
+              required
+              className="mt-2"
+              value={formState.firstName}
+              onChange={(e: any) =>
+                setFormState((s) => ({ ...s, firstName: e.target.value }))
+              }
+            />
           </div>
 
           <div>
             <div className="flex items-center justify-between">
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-300"
-              >
-                Password
-              </label>
+              <Label>Password</Label>
               <div className="text-sm">
                 <a
                   href="#"
@@ -55,16 +52,14 @@ export default function Login() {
                 </a>
               </div>
             </div>
-            <div className="mt-2">
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                className="block w-full rounded-md border-0 py-1.5 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-greeny sm:text-sm sm:leading-6"
-              />
-            </div>
+            <Input
+              required
+              className="mt-2"
+              value={formState.password}
+              onChange={(e: any) =>
+                setFormState((s) => ({ ...s, password: e.target.value }))
+              }
+            />
           </div>
 
           <div>
