@@ -1,5 +1,4 @@
 "use client";
-//@ts-ignore
 import Image from "next/image";
 import { useState } from "react";
 import defaultProfile from "@/assets/images/default_profile.png";
