@@ -8,7 +8,7 @@ export default function Login() {
         <Image
           className="mx-auto w-auto"
           src={logo}
-          alt="Your Company"
+          alt="Wolf"
           width={50}
           height={50}
         />
