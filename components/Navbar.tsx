@@ -1,4 +1,7 @@
-import Profile from "./profile";
+import Profile from "./Profile";
+import Image from "next/image";
+import logo from "@/assets/images/logo.png";
+
 const navigation = [{ name: "Tournaments", href: "/tournaments" }];
 
 export default function Navbar() {
@@ -37,11 +40,7 @@ function NavItems() {
 function Logo() {
   return (
     <a href="/">
-      <img
-        className="h-8 w-8"
-        src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=500"
-        alt="Your Company"
-      />
+      <Image src={logo} alt="Your Company" width={30} height={30} />
     </a>
   );
 }
