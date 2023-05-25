@@ -5,5 +5,22 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  plugins: [],
+  mode: "jit",
+  theme: {
+    extend: {
+      fontFamily: {
+        'press-start': ['"Press Start 2P"', 'cursive'],
+      },
+      colors: {
+        greeny: "#388E3C",
+        blacky: "#18181B"
+      },
+      backgroundImage: {
+        "pattern": "url('/bg.jpg')",
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
