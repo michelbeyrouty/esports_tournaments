@@ -8,15 +8,15 @@ export default function Profile() {
 
   const menuItems = [
     {
-      href: "/login",
+      href: "/auth/login",
       name: "Your profile",
     },
     {
-      href: "/login",
+      href: "/auth/login",
       name: "Settings",
     },
     {
-      href: "/login",
+      href: "/auth/login",
       name: "log in",
     },
   ];
