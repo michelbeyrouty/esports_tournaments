@@ -2,7 +2,9 @@ import EarthCanvas from "./3D/Earth";
 
 export default function Hero() {
   return (
-    <section className={`h-screen grid grid-cols-2 place-items-center`}>
+    <section
+      className={`h-screen grid md:grid-cols-2 sm:grid-cols-1 place-items-center`}
+    >
       <Introduction />
       <EarthCanvas />
     </section>
@@ -11,7 +13,7 @@ export default function Hero() {
 
 function Introduction() {
   return (
-    <div className="px-6 top-2/3">
+    <div className="px-24">
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-greeny sm:text-6xl">
           Unleash Your Gaming Greatness
