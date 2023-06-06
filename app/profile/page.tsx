@@ -1,3 +1,3 @@
-export default function Tournaments() {
+export default function UserProfile() {
   return <div> Under Construction 🏗️</div>;
 }
