@@ -8,12 +8,8 @@ export default function Profile() {
 
   const menuItems = [
     {
-      href: "/login",
+      href: "/profile",
       name: "Your profile",
-    },
-    {
-      href: "/login",
-      name: "Settings",
     },
     {
       href: "/login",

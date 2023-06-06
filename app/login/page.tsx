@@ -3,7 +3,7 @@ import logo from "@/assets/images/logo.png";
 
 export default function Login() {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="h-screen relative isolate px-6 pt-14 lg:px-8">
       <div>
         <Image
           className="mx-auto w-auto"
