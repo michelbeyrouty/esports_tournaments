@@ -26,7 +26,7 @@ export default function Profile() {
             className="flex max-w-xs items-center rounded-full bg-blacky text-sm"
           >
             <Image
-              className="h-8 w-8 rounded-full"
+              className="h-10 w-10 rounded-full"
               src={defaultProfile}
               alt="default profile"
               width={50}

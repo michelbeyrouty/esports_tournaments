@@ -26,7 +26,7 @@ function NavItems() {
           <a
             href={nav.href}
             key={nav.name}
-            className="text-gray-300 rounded-md px-3 py-2 text-sm font-medium"
+            className="text-gray-300 rounded-md px-3 py-2 text-md font-medium"
             aria-current="page"
           >
             {nav.name}
@@ -40,7 +40,7 @@ function NavItems() {
 function Logo() {
   return (
     <a href="/">
-      <Image src={logo} alt="Your Company" width={30} height={30} />
+      <Image src={logo} alt="Your Company" width={40} height={40} />
     </a>
   );
 }
