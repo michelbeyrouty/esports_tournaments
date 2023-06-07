@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("rainbow-gaming px-20", inter.className)}>
+      <body className={clsx("rainbow-gaming", inter.className)}>
         <Navbar />
         {children}
       </body>

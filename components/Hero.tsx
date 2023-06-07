@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <section
-      className={`h-screen grid md:grid-cols-2 sm:grid-cols-1 place-items-center`}
+      className={`h-screen grid md:grid-cols-2 sm:grid-cols-1 place-items-center px-20`}
     >
       <Introduction />
       <EarthCanvas />
@@ -24,7 +24,7 @@ function Introduction() {
           as you rise to the top, leaving an indelible mark on the world of
           esports.
         </p>
-        <Button className="mt-10 w-1/3">
+        <Button className="mt-10 w-2/6">
           <a
             href="#"
             className="rounded-md py-1.5 text-sm font-semibold text-gray-300"

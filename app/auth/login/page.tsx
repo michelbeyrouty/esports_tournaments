@@ -48,7 +48,7 @@ export default function Login() {
               </label>
               <div className="text-sm">
                 <a
-                  href="#"
+                  href="/auth/recover"
                   className="font-semibold text-greeny hover:text-green-600"
                 >
                   Forgot password?
@@ -80,7 +80,7 @@ export default function Login() {
         <p className="mt-10 text-center text-sm text-gray-500">
           {"Not a member? "}
           <a
-            href="/signup"
+            href="/auth/register"
             className="font-semibold leading-6 text-greeny hover:text-green-600"
           >
             Sign up now

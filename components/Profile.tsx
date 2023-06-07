@@ -12,7 +12,7 @@ export default function Profile() {
       name: "Your profile",
     },
     {
-      href: "/login",
+      href: "/auth/login",
       name: "log in",
     },
   ];
