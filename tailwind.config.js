@@ -14,11 +14,9 @@ module.exports = {
       '85%': '85%',
     },
     extend: {
-      fontFamily: {
-        'press-start': ['"Press Start 2P"', 'cursive'],
-      },
       colors: {
-        greeny: "#388E3C",
+        greeny: "#92FF33",
+        whity: "#F9FFF3",
       },
       backgroundImage: {
         'hero-pattern': "url('../public/hero_bg.png')",

@@ -1,9 +1,9 @@
 import "styles/globals.css";
 import clsx from "clsx";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "WOLF",

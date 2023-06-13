@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -47,12 +48,12 @@ export default function Login() {
                 Password
               </label>
               <div className="text-sm">
-                <a
+                <Link
                   href="/auth/recover"
                   className="font-semibold text-greeny hover:text-green-600"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-2">
@@ -79,12 +80,12 @@ export default function Login() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           {"Not a member? "}
-          <a
+          <Link
             href="/auth/register"
             className="font-semibold leading-6 text-greeny hover:text-green-600"
           >
             Sign up now
-          </a>
+          </Link>
         </p>
       </div>
     </div>
