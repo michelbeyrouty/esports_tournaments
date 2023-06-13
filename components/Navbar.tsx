@@ -6,7 +6,7 @@ const navigation = [{ name: "Tournaments", href: "/tournaments" }];
 
 export default function Navbar() {
   return (
-    <nav className="bg-blacky">
+    <nav>
       <div className="mx-5 md:mx-auto max-w-7xl">
         <div className="flex h-16 items-center justify-between">
           <NavItems />

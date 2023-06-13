@@ -6,8 +6,8 @@ import Navbar from "../components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Esports Tournament",
-  description: "Esports Tournament platform",
+  title: "WOLF",
+  description: "World Online League Factions",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("rainbow-gaming", inter.className)}>
+      <body className={clsx("bg-black", inter.className)}>
         <Navbar />
         {children}
       </body>
