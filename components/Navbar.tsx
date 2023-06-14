@@ -8,7 +8,7 @@ const navigation = [{ name: "Tournaments", href: "/tournaments" }];
 export default function Navbar() {
   return (
     <nav>
-      <div className="mx-auto py-5 max-w-7xl">
+      <div className="mx-auto py-5 w-10/12">
         <div className="flex items-center justify-between">
           <Logo />
           <div className="flex-grow">
