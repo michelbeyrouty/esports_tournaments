@@ -1,13 +1,13 @@
 import "styles/globals.css";
 import clsx from "clsx";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Esports Tournament",
-  description: "Esports Tournament platform",
+  title: "WOLF",
+  description: "World Online League Factions",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("rainbow-gaming", inter.className)}>
+      <body className={clsx("bg-black", inter.className)}>
         <Navbar />
         {children}
       </body>

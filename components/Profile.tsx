@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import defaultProfile from "@/assets/images/default_profile.png";
+import Link from "next/link";
 
 export default function Profile() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -42,13 +43,13 @@ export default function Profile() {
             aria-orientation="vertical"
           >
             {menuItems.map((menuItem) => (
-              <a
+              <Link
                 href={menuItem.href}
                 key={menuItem.name}
                 className="block px-4 py-2 text-sm text-gray-700"
               >
                 {menuItem.name}
-              </a>
+              </Link>
             ))}
           </div>
         ) : (

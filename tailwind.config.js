@@ -7,16 +7,19 @@ module.exports = {
   ],
   mode: "jit",
   theme: {
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '85%': '85%',
+    },
     extend: {
-      fontFamily: {
-        'press-start': ['"Press Start 2P"', 'cursive'],
-      },
       colors: {
-        greeny: "#388E3C",
-        blacky: "#18181B"
+        greeny: "#92FF33",
+        whity: "#F9FFF3",
       },
       backgroundImage: {
-        "pattern": "url('/bg.jpg')",
+        'hero-pattern': "url('../public/hero_bg.png')",
       },
     },
   },
