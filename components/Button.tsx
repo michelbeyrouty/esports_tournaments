@@ -3,7 +3,6 @@ import { cva, VariantProps } from "class-variance-authority";
 const buttonClasses = cva(
   [
     "flex",
-    "w-full",
     "justify-center",
     "rounded-md",
     "px-30",
@@ -15,13 +14,7 @@ const buttonClasses = cva(
   {
     variants: {
       intent: {
-        primary: [
-          "bg-greeny",
-          "text-sm",
-          "text-gray-300",
-          "border-transparent",
-          "hover:bg-green-600",
-        ],
+        primary: ["bg-greeny", "text-sm", "text-black", "border-transparent"],
 
         secondary: ["bg-white", "text-black"],
         text: ["bg-transparent", "text-black", "hover:bg-gray-100"],

@@ -23,14 +23,9 @@ function Introduction() {
           friends become fierce competitors
         </p>
         <br />
-        <br />
-        <div className="w-12">
-          <Link href="/" passHref>
-            <Button className="rounded-md py-1.5 text-sm font-semibold text-black">
-              Get started
-            </Button>
-          </Link>
-        </div>
+        <Link href="/" passHref>
+          <Button intent="primary">Get started</Button>
+        </Link>
       </div>
     </div>
   );
