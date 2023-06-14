@@ -8,9 +8,12 @@ const navigation = [{ name: "Tournaments", href: "/tournaments" }];
 export default function Navbar() {
   return (
     <nav>
-      <div className="mx-5 md:mx-auto max-w-7xl">
+      <div className="mx-10 max-w-7xl">
         <div className="flex h-16 items-center justify-between">
-          <NavItems />
+          <Logo />
+          <div className="flex-grow">
+            <NavItems />
+          </div>
           <Profile />
         </div>
       </div>
@@ -21,7 +24,6 @@ export default function Navbar() {
 function NavItems() {
   return (
     <div className="flex items-center">
-      <Logo />
       <div className="ml-10 flex items-baseline space-x-4">
         {navigation.map((nav) => (
           <Link
@@ -41,7 +43,7 @@ function NavItems() {
 function Logo() {
   return (
     <Link href="/">
-      <Image src={logo} alt="Your Company" width={40} height={40} />
+      <Image src={logo} alt="Your Company" width={80} height={80} />
     </Link>
   );
 }
