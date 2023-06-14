@@ -23,7 +23,7 @@ export default function Navbar() {
 
 function NavItems() {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center flex-row-reverse">
       <div className="ml-10 flex items-baseline space-x-4">
         {navigation.map((nav) => (
           <Link
