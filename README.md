@@ -15,4 +15,4 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Deployment
 
-Deployed on [wolf.com](https://www.michelbeyrouty.com)
+Deployed on [www.wolfleagues.com](https://www.wolfleagues.com)
