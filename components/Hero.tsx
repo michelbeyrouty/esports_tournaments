@@ -13,7 +13,7 @@ export default function Hero() {
 
 function Introduction() {
   return (
-    <div className="w-1/3 pt-32 pl-20">
+    <div className="w-1/3 pt-32 pl-[8%]">
       <div>
         <h1 className="text-6xl font-extrabold text-whity">Join.</h1>
         <h1 className="text-6xl font-extrabold text-whity">Compete.</h1>
