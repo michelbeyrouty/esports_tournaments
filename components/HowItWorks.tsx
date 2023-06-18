@@ -6,9 +6,11 @@ import hiwTrophy from "@/assets/images/hiw_trophy.svg";
 
 export default function HowItWorks() {
   return (
-    <div className="pt-48 flex flex-col items-center">
-      <div className="flex flex-row justify-between w-screen pl-[6%]">
-        <h1 className="text-whity font-bold text-4xl w-36">How It Works</h1>
+    <div className="pt-[10%] flex flex-col sm:items-center items-start">
+      <div className="flex sm:flex-row flex-col justify-between w-auto sm:w-screen pl-[6%] gap-12">
+        <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto">
+          How It Works
+        </h1>
         <WorkCard
           title="Create Profile"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"
@@ -16,14 +18,14 @@ export default function HowItWorks() {
         />
         <h1 className="text-whity invisible">How It</h1>
       </div>
-      <div className="pl-[35%] pt-24">
+      <div className="sm:pl-[35%] pl-[6%] sm:pt-24 pt-[40%]">
         <WorkCard
           title="Enroll in a tournament"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"
           imgSrc={hiwController}
         />
       </div>
-      <div className="pl-[55%] pt-24">
+      <div className="sm:pl-[55%] pl-[6%] sm:pt-24 pt-[55%]">
         <WorkCard
           title="Play & win real money"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"
