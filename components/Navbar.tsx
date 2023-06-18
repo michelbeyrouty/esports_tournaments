@@ -6,17 +6,14 @@ import logo from "@/assets/images/logo.png";
 import menu from "@/assets/images/menu.svg";
 import Link from "next/link";
 
-const navigation = [
-  { name: "Tournaments", href: "/tournaments" },
-  { name: "xxx", href: "/tournaments" },
-];
+const navigation = [{ name: "Tournaments", href: "/tournaments" }];
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="w-full flex items-center py-5 fixed top-0">
-      <div className="w-full flex justify-between items-center mx-[5%]">
+      <div className="w-full flex justify-between items-center mx-[6%]">
         <Logo />
         <BigScreenNav />
         <SmallScreenNav toggle={toggle} setToggle={setToggle} />
@@ -51,7 +48,7 @@ function BigScreenNav() {
 
 function NavItems() {
   return (
-    <div className="ml-10 space-x-4">
+    <div className="mr-5 space-x-4">
       {navigation.map((nav) => (
         <Link
           href={nav.href}
