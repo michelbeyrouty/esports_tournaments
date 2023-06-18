@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex items-center py-5 fixed top-0">
-      <div className="w-full flex justify-between items-center mx-[6%] ">
+      <div className="w-full flex justify-between items-center mx-[6%]">
         <Logo />
         <BigScreenNav />
         <SmallScreenNav toggle={toggle} setToggle={setToggle} />
