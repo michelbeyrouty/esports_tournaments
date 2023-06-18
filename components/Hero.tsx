@@ -6,7 +6,7 @@ export default function Hero() {
     <section className={` bg-black h-screen `}>
       <div className="h-full flex flex-col sm:flex-row">
         <Introduction />
-        <div className="sm:flex-grow bg-red-50 bg-hero-pattern bg-right-bottom bg-no-repeat bg-130%"></div>
+        <div className="sm:flex-grow bg-hero-pattern bg-right-bottom bg-no-repeat bg-130%"></div>
       </div>
     </section>
   );
