@@ -4,16 +4,20 @@ import Profile from "./Profile";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 import menu from "@/assets/images/menu.svg";
+import closedMenu from "@/assets/images/closed_menu.svg";
 import Link from "next/link";
 
-const navigation = [{ name: "Tournaments", href: "/tournaments" }];
+const navigation = [
+  { name: "Games", href: "/tournaments" },
+  { name: "Tournaments", href: "/tournaments" },
+];
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="w-full flex items-center py-5 fixed top-0">
-      <div className="w-full flex justify-between items-center mx-[6%]">
+      <div className="w-full flex justify-between items-center mx-[6%] ">
         <Logo />
         <BigScreenNav />
         <SmallScreenNav toggle={toggle} setToggle={setToggle} />
@@ -26,11 +30,18 @@ function SmallScreenNav({ toggle, setToggle }: any) {
   return (
     <div className="sm:hidden flex flex-1 justify-end items-center">
       <Image
-        src={toggle ? close : menu}
+        src={toggle ? closedMenu : menu}
         alt="menu"
         className="w-[28px] h-[28px] object-contain"
         onClick={() => setToggle(!toggle)}
       />
+      <div
+        className={`${
+          !toggle ? "hidden" : "flex"
+        } p-6 absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-full h-screen`}
+      >
+        <NavItems2 />
+      </div>
     </div>
   );
 }
@@ -46,6 +57,22 @@ function BigScreenNav() {
   );
 }
 
+function NavItems2() {
+  return (
+    <div className="flex flex-col">
+      {navigation.map((nav) => (
+        <Link
+          href={nav.href}
+          key={nav.name}
+          className="text-whity text-5xl font-bold italic pt-5 pl-[35%]"
+        >
+          {nav.name}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 function NavItems() {
   return (
     <div className="mr-5 space-x-4">
@@ -53,7 +80,7 @@ function NavItems() {
         <Link
           href={nav.href}
           key={nav.name}
-          className="text-gray-300 rounded-md px-3 py-2 text-md font-medium"
+          className="text-whity rounded-md px-3 py-2 text-md font-medium"
           aria-current="page"
         >
           {nav.name}
