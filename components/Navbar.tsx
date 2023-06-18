@@ -38,7 +38,7 @@ function SmallScreenNav({ toggle, setToggle }: any) {
       <div
         className={`${
           !toggle ? "hidden" : "flex"
-        } p-6 absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-full h-screen`}
+        } justify-end absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-screen h-screen`}
       >
         <NavItems2 />
       </div>
@@ -59,12 +59,12 @@ function BigScreenNav() {
 
 function NavItems2() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pt-10">
       {navigation.map((nav) => (
         <Link
           href={nav.href}
           key={nav.name}
-          className="text-whity text-5xl font-bold italic pt-5 pl-[35%]"
+          className="text-whity text-5xl font-bold italic pt-5 pr-2 text-right"
         >
           {nav.name}
         </Link>
