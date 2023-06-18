@@ -25,15 +25,23 @@ export default function TournamentCard({ tournament }: any) {
       <h1 className="text-whity font-bold text-md italic mx-2">
         {tournament.name}
       </h1>
+      <br />
       <TournamentCardInfo
         prizePool={tournament.prizePool}
         entryFee={tournament.entryFee}
+        enrolledPlayers={tournament.enrolledPlayers}
+        capacity={tournament.capacity}
       />
     </Card>
   );
 }
 
-function TournamentCardInfo({ prizePool, entryFee }: any) {
+function TournamentCardInfo({
+  prizePool,
+  entryFee,
+  enrolledPlayers,
+  capacity,
+}: any) {
   return (
     <div className="flex flex-row mx-2 gap-5">
       <TournamentCardInfo2
@@ -48,8 +56,8 @@ function TournamentCardInfo({ prizePool, entryFee }: any) {
       />
       <TournamentCardInfo2
         title={"Players"}
-        image={prizePoolIcon}
-        data={prizePool}
+        image={entryFeeIcon}
+        data={enrolledPlayers + "/" + capacity}
       />
     </div>
   );

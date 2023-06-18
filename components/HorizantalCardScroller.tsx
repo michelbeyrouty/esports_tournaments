@@ -1,16 +1,65 @@
 const x = [1, 2, 3, 4, 5];
-import Button from "./Button";
 import TournamentCard from "./TournamentCard";
 import { Tournament } from "./TournamentCard";
 
-const tournament: Tournament = {
-  name: "NBA2K23 TOURNAMENT",
-  imageName: "tournament_fifa",
-  prizePool: "$52",
-  entryFee: "$4",
-  enrolledPlayers: 2,
-  capacity: 16,
-};
+const tournaments: Tournament[] = [
+  {
+    name: "MORTAL COMBAT III",
+    imageName: "tournament_mortalcombat",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 2,
+    capacity: 16,
+  },
+  {
+    name: "NBA2K23 TOURNAMENT",
+    imageName: "tournament_nba",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 2,
+    capacity: 16,
+  },
+  {
+    name: "MORTAL COMBAT III",
+    imageName: "tournament_mortalcombat",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 2,
+    capacity: 16,
+  },
+  {
+    name: "NBA2K23 TOURNAMENT",
+    imageName: "tournament_nba",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 8,
+    capacity: 8,
+  },
+  {
+    name: "MORTAL COMBAT III",
+    imageName: "tournament_mortalcombat",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 4,
+    capacity: 16,
+  },
+  {
+    name: "NBA2K23 TOURNAMENT",
+    imageName: "tournament_nba",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 6,
+    capacity: 6,
+  },
+  //   {
+  //     name: "EA FIFA 23 TOURNAMENT",
+  //     imageName: "tournament_fifa",
+  //     prizePool: "$52",
+  //     entryFee: "$4",
+  //     enrolledPlayers: 2,
+  //     capacity: 16,
+  //   },
+];
 
 export default function HorizantalCardScroller() {
   return (
@@ -19,7 +68,7 @@ export default function HorizantalCardScroller() {
         Tournaments
       </h1>
       <div className="flex overflow-auto">
-        {x.map(() => (
+        {tournaments.map((tournament) => (
           <div
             key=""
             style={{ height: "2300px", width: "514px", margin: "16px" }}
