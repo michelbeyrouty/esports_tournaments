@@ -6,7 +6,7 @@ import hiwTrophy from "@/assets/images/hiw_trophy.svg";
 
 export default function HowItWorks() {
   return (
-    <div className="pt-[10%] flex flex-col sm:items-center items-start">
+    <div className="sm:pt-[10%] pt-0 flex flex-col sm:items-center items-start">
       <div className="flex sm:flex-row flex-col justify-between w-auto sm:w-screen pl-[6%] gap-12">
         <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto">
           How It Works
@@ -25,7 +25,7 @@ export default function HowItWorks() {
           imgSrc={hiwController}
         />
       </div>
-      <div className="sm:pl-[55%] pl-[6%] sm:pt-24 pt-[70%]">
+      <div className="sm:pl-[55%] pl-[6%] sm:pt-24 pt-[80%]">
         <WorkCard
           title="Play & win real money"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"
