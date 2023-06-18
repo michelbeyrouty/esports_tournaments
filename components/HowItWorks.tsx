@@ -18,14 +18,14 @@ export default function HowItWorks() {
         />
         <h1 className="text-whity invisible">How It</h1>
       </div>
-      <div className="sm:pl-[35%] pl-[6%] sm:pt-24 pt-[40%]">
+      <div className="sm:pl-[35%] pl-[6%] sm:pt-24 pt-[50%]">
         <WorkCard
           title="Enroll in a tournament"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"
           imgSrc={hiwController}
         />
       </div>
-      <div className="sm:pl-[55%] pl-[6%] sm:pt-24 pt-[55%]">
+      <div className="sm:pl-[55%] pl-[6%] sm:pt-24 pt-[70%]">
         <WorkCard
           title="Play & win real money"
           content="Elevate your game nights by joining or creating a league, where friends become fierce competitors"

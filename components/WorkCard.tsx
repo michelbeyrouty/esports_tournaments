@@ -14,7 +14,7 @@ export default function WorkCard({ title, content, imgSrc }: any) {
         <h1 className="sm:text-xl text-4xl font-extrabold text-whity text-left">
           {title}
         </h1>
-        <p className="mt-0.5 sm:text-sm text-xl text-whity text-left mr-10">
+        <p className="mt-0.5 sm:text-sm text-xl text-whity text-left mr-10 pt-[5%] sm:pt-0">
           {content}
         </p>
       </div>
