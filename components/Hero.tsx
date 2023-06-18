@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className={` bg-black h-screen `}>
+    <section className={` bg-blacky h-screen `}>
       <div className="h-full flex flex-col sm:flex-row">
         <Introduction />
         <div className="sm:flex-grow bg-hero-pattern bg-right-bottom bg-no-repeat bg-130%"></div>

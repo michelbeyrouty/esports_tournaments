@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         greeny: "#92FF33",
         whity: "#F9FFF3",
+        blacky: "#0F1009"
       },
       backgroundImage: {
         'hero-pattern': "url('../public/hero_bg.png')",
