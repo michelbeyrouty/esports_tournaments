@@ -3,17 +3,18 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div
-      className={`bg-hero-pattern bg-black h-screen bg-right-top bg-no-repeat bg-85%`}
-    >
-      <Introduction />
-    </div>
+    <section className={` bg-black h-screen `}>
+      <div className="h-full flex flex-col sm:flex-row">
+        <Introduction />
+        <div className="sm:flex-grow bg-hero-pattern bg-right-bottom bg-no-repeat bg-130%"></div>
+      </div>
+    </section>
   );
 }
 
 function Introduction() {
   return (
-    <div className="w-1/3 pt-32 pl-[8%]">
+    <div className="sm:w-1/3 sm:pt-[15%] pl-[6%] pt-[35%]">
       <div>
         <h1 className="text-6xl font-extrabold text-whity">Join.</h1>
         <h1 className="text-6xl font-extrabold text-whity">Compete.</h1>

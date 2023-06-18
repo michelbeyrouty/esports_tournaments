@@ -1,41 +1,91 @@
+"use client";
+import { useState } from "react";
 import Profile from "./Profile";
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
+import menu from "@/assets/images/menu.svg";
+import closedMenu from "@/assets/images/closed_menu.svg";
 import Link from "next/link";
 
-const navigation = [{ name: "Tournaments", href: "/tournaments" }];
+const navigation = [
+  { name: "Games", href: "/tournaments" },
+  { name: "Tournaments", href: "/tournaments" },
+];
 
 export default function Navbar() {
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <nav>
-      <div className="mx-auto py-5 w-10/12">
-        <div className="flex items-center justify-between">
-          <Logo />
-          <div className="flex-grow">
-            <NavItems />
-          </div>
-          <Profile />
-        </div>
+    <nav className="w-full flex items-center py-5 fixed top-0">
+      <div className="w-full flex justify-between items-center mx-[6%] ">
+        <Logo />
+        <BigScreenNav />
+        <SmallScreenNav toggle={toggle} setToggle={setToggle} />
       </div>
     </nav>
   );
 }
 
+function SmallScreenNav({ toggle, setToggle }: any) {
+  return (
+    <div className="sm:hidden flex flex-1 justify-end items-center">
+      <Image
+        src={toggle ? closedMenu : menu}
+        alt="menu"
+        className="w-[28px] h-[28px] object-contain"
+        onClick={() => setToggle(!toggle)}
+      />
+      <div
+        className={`${
+          !toggle ? "hidden" : "flex"
+        } p-6 absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-full h-screen`}
+      >
+        <NavItems2 />
+      </div>
+    </div>
+  );
+}
+
+function BigScreenNav() {
+  return (
+    <>
+      <div className="sm:justify-end sm:flex-grow sm:flex hidden">
+        <NavItems />
+      </div>
+      <Profile className="hidden sm:flex" />
+    </>
+  );
+}
+
+function NavItems2() {
+  return (
+    <div className="flex flex-col">
+      {navigation.map((nav) => (
+        <Link
+          href={nav.href}
+          key={nav.name}
+          className="text-whity text-5xl font-bold italic pt-5 pl-[35%]"
+        >
+          {nav.name}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 function NavItems() {
   return (
-    <div className="flex items-center flex-row-reverse">
-      <div className="ml-10 flex items-baseline space-x-4">
-        {navigation.map((nav) => (
-          <Link
-            href={nav.href}
-            key={nav.name}
-            className="text-gray-300 rounded-md px-3 py-2 text-md font-medium"
-            aria-current="page"
-          >
-            {nav.name}
-          </Link>
-        ))}
-      </div>
+    <div className="mr-5 space-x-4">
+      {navigation.map((nav) => (
+        <Link
+          href={nav.href}
+          key={nav.name}
+          className="text-whity rounded-md px-3 py-2 text-md font-medium"
+          aria-current="page"
+        >
+          {nav.name}
+        </Link>
+      ))}
     </div>
   );
 }

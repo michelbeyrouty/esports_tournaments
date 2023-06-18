@@ -11,7 +11,7 @@ module.exports = {
       'auto': 'auto',
       'cover': 'cover',
       'contain': 'contain',
-      '85%': '85%',
+      '130%': '133%',
     },
     extend: {
       colors: {
@@ -20,6 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('../public/hero_bg.png')",
+        'hero-pattern2': "url('../public/hero_bg_2.png')",
       },
     },
   },
