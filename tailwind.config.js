@@ -17,11 +17,13 @@ module.exports = {
       colors: {
         greeny: "#92FF33",
         whity: "#F9FFF3",
-        blacky: "#0F1009"
+        blacky: "#060702"
       },
       backgroundImage: {
-        'hero-pattern': "url('../public/hero_bg.png')",
-        'hero-pattern2': "url('../public/hero_bg_2.png')",
+        'hero-pattern': "url('../assets/images/hero_bg.png')",
+        'hero-pattern2': "url('../assets/images/hero_bg_2.png')",
+        'pattern-dark-full': "url('../assets/images/pattern_dark_full.png')",
+        'pattern-dark': "url('../assets/images/pattern_dark.png')",
       },
     },
   },

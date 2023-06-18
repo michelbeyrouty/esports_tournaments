@@ -38,7 +38,7 @@ function SmallScreenNav({ toggle, setToggle }: any) {
       <div
         className={`${
           !toggle ? "hidden" : "flex"
-        } justify-end absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-screen h-screen`}
+        } justify-end absolute top-20 left-0 bg-neutral-900 bg-opacity-90 w-screen h-screen bg-pattern-dark bg-no-repeat bg-center`}
       >
         <NavItems2 />
       </div>
