@@ -4,7 +4,7 @@ import { useState } from "react";
 import defaultProfile from "@/assets/images/default_profile.png";
 import Link from "next/link";
 
-export default function Profile() {
+export default function Profile({ className }: any) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const menuItems = [
@@ -19,7 +19,7 @@ export default function Profile() {
   ];
 
   return (
-    <div>
+    <div className={className}>
       <div className="relative ml-3">
         <div>
           <button
