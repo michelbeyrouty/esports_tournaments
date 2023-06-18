@@ -38,7 +38,7 @@ function SmallScreenNav({ toggle, setToggle }: any) {
       <div
         className={`${
           !toggle ? "hidden" : "flex"
-        } justify-end absolute top-20 left-0 bg-blacky bg-opacity-90 w-screen h-screen bg-pattern-dark bg-no-repeat bg-bottom`}
+        } justify-end absolute top-16 left-0 bg-blacky bg-opacity-90 w-screen h-[1250%] bg-pattern-dark bg-no-repeat bg-center`}
       >
         <NavItems2 />
       </div>
@@ -64,7 +64,7 @@ function NavItems2() {
         <Link
           href={nav.href}
           key={nav.name}
-          className="text-whity text-5xl font-bold italic pt-5 pr-2 text-right"
+          className="text-whity text-5xl font-bold italic pt-5 pr-4 text-right"
         >
           {nav.name}
         </Link>
