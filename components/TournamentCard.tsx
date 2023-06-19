@@ -2,6 +2,8 @@ import prizePoolIcon from "@/assets/images/prize_pool.png";
 import entryFeeIcon from "@/assets/images/entry_fee.png";
 import Image from "next/image";
 import Card from "./Card";
+import Button from "./Button";
+import Timer from "./Timer";
 
 const x = [1, 2, 3];
 
@@ -16,7 +18,7 @@ export interface Tournament {
 
 export default function TournamentCard({ tournament }: any) {
   return (
-    <Card className="bg-grayy h-64 w-60 flex flex-col">
+    <Card className="bg-grayy h-72 w-60 flex flex-col">
       <Image
         className="mx-2 mt-2 w-auto"
         src={require(`@/assets/images/${tournament.imageName}.png`)}
@@ -26,12 +28,20 @@ export default function TournamentCard({ tournament }: any) {
         {tournament.name}
       </h1>
       <br />
-      <TournamentCardInfo
-        prizePool={tournament.prizePool}
-        entryFee={tournament.entryFee}
-        enrolledPlayers={tournament.enrolledPlayers}
-        capacity={tournament.capacity}
-      />
+      <div className="pb-1">
+        <TournamentCardInfo
+          prizePool={tournament.prizePool}
+          entryFee={tournament.entryFee}
+          enrolledPlayers={tournament.enrolledPlayers}
+          capacity={tournament.capacity}
+        />
+      </div>
+
+      <div className="bg-greeny h-0.5"></div>
+      <div className="w-full h-10 bg-lightgray flex-grow flex flex-row justify-between content-center">
+        <Timer />
+        <Button />
+      </div>
     </Card>
   );
 }
