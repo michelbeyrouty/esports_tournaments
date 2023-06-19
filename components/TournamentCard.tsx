@@ -18,7 +18,7 @@ export interface Tournament {
 
 export default function TournamentCard({ tournament }: any) {
   return (
-    <Card className="bg-grayy h-80 w-64 flex flex-col">
+    <Card className="bg-grayy sm:h-72 sm:w-60 h-80 w-64 flex flex-col">
       <Image
         className="mx-2 mt-2 w-auto"
         src={require(`@/assets/images/${tournament.imageName}.png`)}
