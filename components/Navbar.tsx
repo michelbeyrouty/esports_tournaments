@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Games", href: "/tournaments" },
-  { name: "Tournaments", href: "/#tournaments" },
+  { name: "Tournaments", href: "#tournaments" },
 ];
 
 export default function Navbar() {
