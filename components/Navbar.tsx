@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Games", href: "/tournaments" },
-  { name: "Tournaments", href: "/tournaments" },
+  { name: "Tournaments", href: "/#tournaments" },
 ];
 
 export default function Navbar() {
@@ -81,7 +81,6 @@ function NavItems() {
           href={nav.href}
           key={nav.name}
           className="text-whity rounded-md px-3 py-2 text-md font-medium"
-          aria-current="page"
         >
           {nav.name}
         </Link>
