@@ -79,16 +79,13 @@ const tournaments: Tournament[] = [
 
 export default function HorizantalCardScroller() {
   return (
-    <div className="h-screen w-screen pl-[6%] mt-[10%]">
+    <div className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[70%]">
       <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto italic">
         Tournaments
       </h1>
       <div className="flex overflow-auto mt-10">
         {tournaments.map((tournament) => (
-          <div
-            key=""
-            style={{ height: "2300px", width: "514px", margin: "16px" }}
-          >
+          <div key="" className="m-3">
             <TournamentCard tournament={tournament}></TournamentCard>
           </div>
         ))}

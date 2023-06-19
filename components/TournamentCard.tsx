@@ -27,8 +27,7 @@ export default function TournamentCard({ tournament }: any) {
       <h1 className="text-whity font-bold text-md italic mx-2">
         {tournament.name}
       </h1>
-      <br />
-      <div className="pb-1">
+      <div className="pb-3 pt-6">
         <TournamentCardInfo
           prizePool={tournament.prizePool}
           entryFee={tournament.entryFee}
@@ -38,7 +37,7 @@ export default function TournamentCard({ tournament }: any) {
       </div>
 
       <div className="bg-greeny h-0.5"></div>
-      <div className="w-full h-10 bg-mediumgray flex-grow flex flex-row justify-between items-center">
+      <div className="bg-mediumgray flex-grow flex flex-row justify-between items-center">
         <div className="flex flex-col ml-3">
           <text className="text-[12px] text-whity">Starting in</text>
           <CountdownTimer targetDate={1687404121318} />
