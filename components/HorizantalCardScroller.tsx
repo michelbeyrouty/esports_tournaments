@@ -81,7 +81,7 @@ export default function HorizantalCardScroller() {
   return (
     <div
       id="tournaments"
-      className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[85%]"
+      className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[85%] scroll-smooth"
     >
       <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto italic">
         Tournaments
