@@ -51,6 +51,22 @@ const tournaments: Tournament[] = [
     enrolledPlayers: 6,
     capacity: 6,
   },
+  {
+    name: "NBA2K23 TOURNAMENT",
+    imageName: "tournament_nba",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 6,
+    capacity: 6,
+  },
+  {
+    name: "NBA2K23 TOURNAMENT",
+    imageName: "tournament_nba",
+    prizePool: "$52",
+    entryFee: "$4",
+    enrolledPlayers: 6,
+    capacity: 6,
+  },
   //   {
   //     name: "EA FIFA 23 TOURNAMENT",
   //     imageName: "tournament_fifa",
@@ -63,11 +79,11 @@ const tournaments: Tournament[] = [
 
 export default function HorizantalCardScroller() {
   return (
-    <div className="h-screen w-screen bg-red-800 pl-[6%]">
+    <div className="h-screen w-screen pl-[6%] mt-[10%]">
       <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto italic">
         Tournaments
       </h1>
-      <div className="flex overflow-auto">
+      <div className="flex overflow-auto mt-10">
         {tournaments.map((tournament) => (
           <div
             key=""

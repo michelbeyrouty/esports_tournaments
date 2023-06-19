@@ -3,7 +3,7 @@ import entryFeeIcon from "@/assets/images/entry_fee.png";
 import Image from "next/image";
 import Card from "./Card";
 import Button from "./Button";
-import Timer from "./Timer";
+import CountdownTimer from "./CountdownTimer";
 
 const x = [1, 2, 3];
 
@@ -38,9 +38,14 @@ export default function TournamentCard({ tournament }: any) {
       </div>
 
       <div className="bg-greeny h-0.5"></div>
-      <div className="w-full h-10 bg-lightgray flex-grow flex flex-row justify-between content-center">
-        <Timer />
-        <Button />
+      <div className="w-full h-10 bg-mediumgray flex-grow flex flex-row justify-between items-center">
+        <div className="flex flex-col ml-3">
+          <text className="text-[12px] text-whity">Starting in</text>
+          <CountdownTimer targetDate={1687404121318} />
+        </div>
+        <Button intent="primary" size="small" className="mr-3">
+          Enroll now
+        </Button>
       </div>
     </Card>
   );
