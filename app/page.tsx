@@ -11,7 +11,11 @@ export default function Home() {
       <br />
       <br />
       <HorizontalTournamentScroller />
+      <br />
+      <br />
       <HorizontalGameScroller />
+      <br />
+      <br />
     </main>
   );
 }

@@ -1,6 +1,4 @@
-const x = [1, 2, 3, 4, 5];
-import TournamentCard from "./TournamentCard";
-import { Tournament } from "./TournamentCard";
+import { Tournament, TournamentCard } from "./TournamentCard";
 
 const tournaments: Tournament[] = [
   {
@@ -79,10 +77,7 @@ const tournaments: Tournament[] = [
 
 export default function HorizontalTournamentScroller() {
   return (
-    <div
-      id="tournaments"
-      className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[85%] scroll-smooth"
-    >
+    <div className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[85%] scroll-smooth">
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic">
         Tournaments
       </h1>
