@@ -47,6 +47,14 @@ export const GAME_IMAGES: Image[] = [
 ];
 
 export const TOURNAMENTS: Tournament[] = [
+  // {
+  //   name: "EA FIFA 23 TOURNAMENT",
+  //   imageName: "tournament_fifa",
+  //   prizePool: "$52",
+  //   entryFee: "$4",
+  //   enrolledPlayers: 2,
+  //   capacity: 16,
+  // },
   {
     name: "MORTAL COMBAT III",
     imageName: "tournament_mortalcombat",
@@ -110,15 +118,7 @@ export const TOURNAMENTS: Tournament[] = [
     entryFee: "$4",
     enrolledPlayers: 6,
     capacity: 6,
-  },
-  //   {
-  //     name: "EA FIFA 23 TOURNAMENT",
-  //     imageName: "tournament_fifa",
-  //     prizePool: "$52",
-  //     entryFee: "$4",
-  //     enrolledPlayers: 2,
-  //     capacity: 16,
-  //   },
+  }
 ];
 
 
