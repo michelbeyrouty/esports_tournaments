@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Card from "./Card";
 
 export default function GameCard({ img, alt }: any) {
   return (
-    <div className="">
+    <Card className="">
       <Image src={img} alt={alt}></Image>
-    </div>
+    </Card>
   );
 }
