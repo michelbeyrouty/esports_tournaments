@@ -32,7 +32,7 @@ export default function Profile({ className }: any) {
               alt="default profile"
               width={50}
               height={50}
-              onClick={() => setMenuOpen(!isMenuOpen)}
+              // onClick={() => setMenuOpen(!isMenuOpen)}
             />
           </button>
         </div>

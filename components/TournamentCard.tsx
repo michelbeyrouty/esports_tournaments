@@ -16,7 +16,7 @@ export interface Tournament {
   capacity: number;
 }
 
-export default function TournamentCard({ tournament }: any) {
+export function TournamentCard({ tournament }: any) {
   return (
     <Card className="bg-grayy sm:h-72 sm:w-60 h-80 w-64 flex flex-col">
       <Image

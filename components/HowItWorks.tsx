@@ -8,7 +8,7 @@ export default function HowItWorks() {
   return (
     <div className="sm:pt-[10%] pt-0 flex flex-col sm:items-center items-start sm:bg-pattern-dark-full sm:bg-no-repeat sm:bg-contain">
       <div className="flex sm:flex-row flex-col justify-between w-auto sm:w-screen pl-[6%] gap-12">
-        <h1 className="text-whity font-bold sm:text-4xl text-6xl sm:w-36 w-auto">
+        <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-48 w-auto">
           How It Works
         </h1>
         <WorkCard
