@@ -16,7 +16,7 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 bg-blacky">
+    <nav className="w-full flex items-center py-5 fixed top-0 bg-blacky z-10">
       <div className="w-full flex justify-between items-center mx-[6%]">
         <Logo />
         <BigScreenNav />

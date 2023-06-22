@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import HorizontalTournamentScroller from "@/components/HorizontalTournamentScroller";
 import HorizontalGameScroller from "@/components/HorizontalGameScroller";
+import BannerSection from "@/components/BannerSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HowItWorks />
       <HorizontalTournamentScroller />
       <HorizontalGameScroller />
+      <BannerSection />
     </main>
   );
 }
