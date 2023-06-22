@@ -46,7 +46,7 @@ const images: Images[] = [
 
 export default function HorizontalTournamentScroller() {
   return (
-    <div className="h-screen w-screen sm:mt-[10%] mt-[85%] scroll-smooth">
+    <div className="h-screen w-screen mt-[10%] scroll-smooth">
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic pl-[6%]">
         Games
       </h1>
@@ -62,7 +62,7 @@ export default function HorizontalTournamentScroller() {
           </div>
         ))}
       </div>
-      <div className="flex overflow-auto pl-10 mt-10 gap-5 animate-move w-[200%]">
+      <div className="flex overflow-auto pl-12 pt-5 gap-5 animate-move w-[200%]">
         {shuffle<Images[]>(images).map(({ img, alt }) => (
           <div key={alt} className="">
             <Image src={img} alt={alt}></Image>
