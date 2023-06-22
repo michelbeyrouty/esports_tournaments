@@ -48,12 +48,12 @@ export default function HorizontalGameScroller() {
   return (
     <div
       id="games"
-      className="h-screen w-screen mt-[10%] scroll-smooth bg-darkgray pt-5"
+      className="h-screen w-screen mt-[10%] scroll-smooth bg-darkgray pt-5 overflow-hidden"
     >
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic pl-[6%]">
         Games
       </h1>
-      <div className="flex overflow-auto mt-10 gap-5 animate-move sm:w-[200%] w-[400%]">
+      <div className="flex mt-10 gap-5 animate-move sm:w-[200%] w-[400%]">
         {shuffle<Images[]>(images).map(({ img, alt }) => (
           <GameCard key={alt} img={img} alt={alt} />
         ))}
@@ -61,7 +61,7 @@ export default function HorizontalGameScroller() {
           <GameCard key={alt} img={img} alt={alt} />
         ))}
       </div>
-      <div className="flex overflow-auto mt-10 gap-5 pl-16 animate-move sm:w-[200%] w-[400%]">
+      <div className="flex mt-10 gap-5 animate-move sm:w-[200%] w-[400%]">
         {shuffle<Images[]>(images).map(({ img, alt }) => (
           <GameCard key={alt} img={img} alt={alt} />
         ))}
