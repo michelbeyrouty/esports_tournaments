@@ -1,4 +1,3 @@
-import Image from "next/image";
 import shuffle from "@/lib/utils/shuffle";
 import gameCod from "@/assets/images/games/game_cod.png";
 import gameFifa from "@/assets/images/games/game_fifa.png";
@@ -7,6 +6,7 @@ import gameMadden from "@/assets/images/games/game_madden.png";
 import gameMortalcombat from "@/assets/images/games/game_mortalcombat.png";
 import gameNba from "@/assets/images/games/game_nba.png";
 import gameRocketleague from "@/assets/images/games/game_rocketleague.png";
+import GameCard from "./GameCard";
 
 export interface Images {
   img: any;
@@ -53,28 +53,20 @@ export default function HorizontalGameScroller() {
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic pl-[6%]">
         Games
       </h1>
-      <div className="flex overflow-auto mt-10 gap-5 animate-move w-[200%]">
+      <div className="flex overflow-auto pt-10 gap-5 animate-move w-[200%]">
         {shuffle<Images[]>(images).map(({ img, alt }) => (
-          <div key={alt} className="">
-            <Image src={img} alt={alt}></Image>
-          </div>
+          <GameCard key={alt} img={img} alt={alt} />
         ))}
         {shuffle<Images[]>(images).map(({ img, alt }) => (
-          <div key={alt} className="">
-            <Image src={img} alt={alt}></Image>
-          </div>
+          <GameCard key={alt} img={img} alt={alt} />
         ))}
       </div>
       <div className="flex overflow-auto pl-12 pt-5 gap-5 animate-move w-[200%]">
         {shuffle<Images[]>(images).map(({ img, alt }) => (
-          <div key={alt} className="">
-            <Image src={img} alt={alt}></Image>
-          </div>
+          <GameCard key={alt} img={img} alt={alt} />
         ))}
         {shuffle<Images[]>(images).map(({ img, alt }) => (
-          <div key={alt} className="">
-            <Image src={img} alt={alt}></Image>
-          </div>
+          <GameCard key={alt} img={img} alt={alt} />
         ))}
       </div>
     </div>
