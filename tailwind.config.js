@@ -15,13 +15,18 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        move: {
+        moveLeft: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        moveRight: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
         }
       },
       animation: {
-        'move': 'move 20s linear infinite',
+        'moveLeft': 'moveLeft 20s linear infinite',
+        'moveRight': 'moveRight 20s linear infinite',
       },
       colors: {
         greeny: "#92FF33",
