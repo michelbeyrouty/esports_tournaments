@@ -48,7 +48,7 @@ export default function HorizontalGameScroller() {
   return (
     <div
       id="games"
-      className="h-screen w-screen mt-[10%] scroll-smooth bg-darkgray pt-5 overflow-hidden"
+      className="h-screen mt-[10%] scroll-smooth bg-darkgray pt-5 overflow-hidden"
     >
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic pl-[6%]">
         Games
