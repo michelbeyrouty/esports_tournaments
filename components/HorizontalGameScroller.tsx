@@ -44,9 +44,12 @@ const images: Images[] = [
   },
 ];
 
-export default function HorizontalTournamentScroller() {
+export default function HorizontalGameScroller() {
   return (
-    <div className="h-screen w-screen mt-[10%] scroll-smooth">
+    <div
+      id="games"
+      className="h-screen w-screen mt-[10%] scroll-smooth bg-darkgray pt-5"
+    >
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic pl-[6%]">
         Games
       </h1>

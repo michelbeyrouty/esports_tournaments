@@ -8,7 +8,7 @@ import closedMenu from "@/assets/images/closed_menu.svg";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Games", href: "/tournaments" },
+  { name: "Games", href: "#games" },
   { name: "Tournaments", href: "#tournaments" },
 ];
 
