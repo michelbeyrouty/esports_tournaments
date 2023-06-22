@@ -77,7 +77,7 @@ const tournaments: Tournament[] = [
 
 export default function HorizontalTournamentScroller() {
   return (
-    <div className="h-screen w-screen pl-[6%] sm:mt-[10%] mt-[85%] scroll-smooth">
+    <div className="w-screen pl-[6%] sm:mt-[10%] mt-[85%] scroll-smooth">
       <h1 className="text-whity font-bold sm:text-5xl text-4xl sm:w-36 w-auto italic">
         Tournaments
       </h1>

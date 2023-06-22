@@ -8,14 +8,8 @@ export default function Home() {
     <main>
       <Hero />
       <HowItWorks />
-      <br />
-      <br />
       <HorizontalTournamentScroller />
-      <br />
-      <br />
       <HorizontalGameScroller />
-      <br />
-      <br />
     </main>
   );
 }
