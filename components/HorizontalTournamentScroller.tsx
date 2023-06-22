@@ -1,6 +1,8 @@
 import { TournamentCard } from "./TournamentCard";
 import { TOURNAMENTS } from "@/lib/constants/constants";
 
+// TODO: Fetch TOURNAMENTS from DB
+
 export default function HorizontalTournamentScroller() {
   return (
     <div
