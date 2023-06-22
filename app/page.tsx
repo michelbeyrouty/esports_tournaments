@@ -1,14 +1,17 @@
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
-import HorizantalCardScroller from "@/components/HorizantalCardScroller";
+import HorizontalTournamentScroller from "@/components/HorizontalTournamentScroller";
+import HorizontalGameScroller from "@/components/HorizontalGameScroller";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <HowItWorks />
-      {/* <div className=" w-screen h-screen bg-blacky"></div> */}
-      <HorizantalCardScroller />
+      <br />
+      <br />
+      <HorizontalTournamentScroller />
+      <HorizontalGameScroller />
     </main>
   );
 }
