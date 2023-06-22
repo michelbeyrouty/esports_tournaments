@@ -1,5 +1,5 @@
 import shuffle from "@/lib/utils/shuffle";
-import { images } from "@/lib/constants/constants";
+import { GAME_IMAGES } from "@/lib/constants/constants";
 import { Image } from "@/lib/constants/types";
 import GameCard from "./GameCard";
 
@@ -13,7 +13,7 @@ export default function HorizontalGameScroller() {
         Games
       </h1>
       <div className="flex mt-10 gap-5 animate-moveLeft sm:w-[200%] w-[450%]">
-        {shuffle<Image[]>(images.concat(images)).map(
+        {shuffle<Image[]>(GAME_IMAGES.concat(GAME_IMAGES)).map(
           ({ img, alt, available }) => (
             <GameCard
               key={alt}
@@ -25,7 +25,7 @@ export default function HorizontalGameScroller() {
         )}
       </div>
       <div className="flex mt-10 gap-5 pr-10 animate-moveRight sm:w-[200%] w-[450%]">
-        {shuffle<Image[]>(images.concat(images)).map(
+        {shuffle<Image[]>(GAME_IMAGES.concat(GAME_IMAGES)).map(
           ({ img, alt, available }) => (
             <GameCard
               key={alt}

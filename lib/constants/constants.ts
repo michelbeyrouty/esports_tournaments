@@ -8,7 +8,7 @@ import gameMortalcombat from "@/assets/images/games/game_mortalcombat.png";
 import gameNba from "@/assets/images/games/game_nba.png";
 import gameRocketleague from "@/assets/images/games/game_rocketleague.png";
 
-export const images: Image[] = [
+export const GAME_IMAGES: Image[] = [
   {
     img: gameCod,
     alt: "Call of Duty",
@@ -46,7 +46,7 @@ export const images: Image[] = [
   },
 ];
 
-export const tournaments: Tournament[] = [
+export const TOURNAMENTS: Tournament[] = [
   {
     name: "MORTAL COMBAT III",
     imageName: "tournament_mortalcombat",
