@@ -4,19 +4,9 @@ import Image from "next/image";
 import Card from "./Card";
 import Button from "./Button";
 import CountdownTimer from "./CountdownTimer";
+import { Tournament } from "@/lib/constants/types";
 
-const x = [1, 2, 3];
-
-export interface Tournament {
-  name: string;
-  imageName: string;
-  prizePool: string;
-  entryFee: string;
-  enrolledPlayers: number;
-  capacity: number;
-}
-
-export function TournamentCard({ tournament }: any) {
+export function TournamentCard({ tournament }: { tournament: Tournament }) {
   return (
     <Card className="bg-grayy sm:h-72 sm:w-60 h-80 w-64 flex flex-col">
       <Image

@@ -1,10 +1,11 @@
 import Image from "next/image";
+import clsx from "clsx";
 import Card from "./Card";
 
-export default function GameCard({ img, alt }: any) {
+export default function GameCard({ img, alt, className }: any) {
   return (
     <Card>
-      <Image src={img} alt={alt}></Image>
+      <Image className={clsx(className)} src={img} alt={alt}></Image>
     </Card>
   );
 }
