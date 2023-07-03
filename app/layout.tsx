@@ -2,6 +2,7 @@ import "styles/globals.css";
 import clsx from "clsx";
 import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={clsx("bg-blacky", inter.className)}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
