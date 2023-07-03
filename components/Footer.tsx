@@ -11,7 +11,8 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <div className="w-full h-40 bg-blacky ">
+    <div className="w-full h-60 bg-blacky flex justify-around flex-col">
+      <div className="mx-[10%] h-0.5 bg-lightgray"></div>
       <div className="flex flex-row justify-between mx-[10%] h-20">
         <Logo />
         <VerticalNav />
