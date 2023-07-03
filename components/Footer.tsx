@@ -11,9 +11,9 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <div className="w-full h-60 bg-blacky flex justify-around flex-col">
+    <div className="w-full sm:h-60 h-80 bg-blacky flex gap-10 flex-col">
       <div className="mx-[10%] h-0.5 bg-lightgray"></div>
-      <div className="flex flex-row justify-between mx-[10%] h-20">
+      <div className="flex sm:flex-row flex-col justify-between mx-[10%] sm:h-20 h-screen">
         <Logo />
         <VerticalNav />
         <Links />
@@ -45,11 +45,12 @@ function VerticalNav() {
 function Links() {
   return (
     <div className="flex flex-col justify-between">
-      <div className="flex flex-row justify-end">
+      <div className="flex flex-row sm:justify-end justify-start">
         <Link href="https://discord.gg/ZEd78mgM" target="_blank">
           <Image src={discordIcon} alt="Discord" />
         </Link>
       </div>
+      <br />
       <div className="text-whity text-sm">© 2023 WOLF. All rights reserved</div>
     </div>
   );
