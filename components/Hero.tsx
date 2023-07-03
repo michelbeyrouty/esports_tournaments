@@ -24,7 +24,7 @@ function Introduction() {
           friends become fierce competitors
         </p>
         <br />
-        <Link href="/" passHref>
+        <Link href="https://discord.gg/ZEd78mgM" target="_blank">
           <Button intent="primary">Get started</Button>
         </Link>
       </div>

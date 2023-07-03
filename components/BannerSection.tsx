@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Link from "next/link";
 import Card from "./Card";
 
 export default function BannerSection() {
@@ -13,13 +14,11 @@ export default function BannerSection() {
             & win real money
           </h2>
         </div>
-        <Button
-          intent="secondary"
-          size="medium"
-          className="mr-0 mb-[10%] sm:mb-0 sm:mr-[5%]"
-        >
-          Find a tournament
-        </Button>
+        <Link href="#tournaments" passHref>
+          <Button intent="secondary" className="sm:mr-5 mb-5">
+            {"Find a tournament"}
+          </Button>
+        </Link>
       </Card>
     </div>
   );
