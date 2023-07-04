@@ -7,14 +7,12 @@ export default function WorkCard({ title, content, imgSrc }: any) {
         src={imgSrc}
         alt="hiwProfile"
         className="sm:flex-grow-0 flex-grow"
-        width={188}
-        height={188}
       />
-      <div className="pl-5">
-        <h1 className="sm:text-xl text-4xl font-extrabold text-whity text-left">
+      <div className="sm:pl-5 pl-0">
+        <h1 className="sm:text-xl text-2xl font-extrabold text-whity text-left">
           {title}
         </h1>
-        <p className="mt-0.5 sm:text-sm text-xl text-whity text-left mr-10 pt-[5%] sm:pt-0">
+        <p className="mt-0.5 sm:text-sm text-l text-whity text-left mr-10 pt-[5%] sm:pt-0">
           {content}
         </p>
       </div>
