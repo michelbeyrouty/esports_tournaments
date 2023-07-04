@@ -44,14 +44,19 @@ function VerticalNav() {
 
 function Links() {
   return (
-    <div className="flex flex-col justify-between">
-      <div className="flex flex-row sm:justify-end justify-start">
-        <Link href="https://discord.gg/ZEd78mgM" target="_blank">
-          <Image src={discordIcon} alt="Discord" />
-        </Link>
+    <>
+      <div className="flex flex-col justify-between">
+        <div className="flex flex-row sm:justify-end justify-start">
+          <Link href="https://discord.gg/ZEd78mgM" target="_blank">
+            <Image src={discordIcon} alt="Discord" />
+          </Link>
+        </div>
+        <br />
+        <div className="text-whity text-sm">
+          © 2023 WOLF. All rights reserved
+        </div>
       </div>
-      <br />
-      <div className="text-whity text-sm">© 2023 WOLF. All rights reserved</div>
-    </div>
+      <br className="sm:hidden flex" />
+    </>
   );
 }
