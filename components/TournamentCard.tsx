@@ -8,16 +8,16 @@ import { Tournament } from "@/lib/constants/types";
 
 export function TournamentCard({ tournament }: { tournament: Tournament }) {
   return (
-    <Card className="bg-grayy sm:h-72 sm:w-60 h-80 w-64 flex flex-col">
+    <Card className="bg-grayy sm:h-[450px] sm:w-[500px] h-80 w-64 flex flex-col">
       <Image
         className="mx-2 mt-2 w-auto"
         src={require(`@/assets/images/${tournament.imageName}.png`)}
         alt="Your Company"
       />
-      <h1 className="text-whity font-bold text-md italic mx-2">
+      <h1 className="text-whity font-bold text-lg italic mx-2">
         {tournament.name}
       </h1>
-      <div className="pb-3 pt-6">
+      <div className="pb-3 pt-4">
         <TournamentCardInfo
           prizePool={tournament.prizePool}
           entryFee={tournament.entryFee}
@@ -25,12 +25,11 @@ export function TournamentCard({ tournament }: { tournament: Tournament }) {
           capacity={tournament.capacity}
         />
       </div>
-
       <div className="bg-greeny h-0.5"></div>
       <div className="bg-mediumgray flex-grow flex flex-row justify-between items-center">
         <div className="flex flex-col ml-3">
           <text className="text-[12px] text-whity">Starting in</text>
-          <CountdownTimer targetDate={1687404121318} />
+          <CountdownTimer targetDate={16874041211000} />
         </div>
         <Button intent="primary" size="small" className="mr-3">
           Enroll now
@@ -72,8 +71,8 @@ function TournamentCardInfo2({ title, image, data }: any) {
     <div className="flex flex-col">
       <text className="text-lightgray text-[12px]">{title}</text>
       <div className="flex flex-row justify-start gap-2">
-        <Image className="h-auto" src={image} alt="Your Company" />
-        <text className="text-whity text-[12px] h-auto">{data}</text>
+        <Image src={image} alt="Your Company" />
+        <text className="text-whity text-[14px] h-auto">{data}</text>
       </div>
     </div>
   );
