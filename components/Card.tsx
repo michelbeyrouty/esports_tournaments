@@ -7,7 +7,7 @@ interface CardProps {
 
 export default function Card({ className, children }: CardProps) {
   return (
-    <div className={clsx("rounded-md rop-shadow-xl", className)}>
+    <div className={clsx("rounded-md rop-shadow-xl py-2", className)}>
       {children}
     </div>
   );

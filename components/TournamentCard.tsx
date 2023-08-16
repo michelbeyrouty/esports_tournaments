@@ -8,16 +8,18 @@ import { Tournament } from "@/lib/constants/types";
 
 export function TournamentCard({ tournament }: { tournament: Tournament }) {
   return (
-    <Card className="bg-grayy sm:h-[450px] sm:w-[500px] h-80 w-64 flex flex-col">
+    <Card className="bg-grayy sm:h-[425px] sm:w-[450px] h-80 w-64 flex flex-col">
       <Image
         className="mx-2 mt-2 w-auto"
         src={require(`@/assets/images/${tournament.imageName}.png`)}
         alt="Your Company"
       />
+      <div className="h-1" />
       <h1 className="text-whity font-bold text-lg italic mx-2">
         {tournament.name}
       </h1>
-      <div className="pb-3 pt-4">
+      <div className="h-1" />
+      <div>
         <TournamentCardInfo
           prizePool={tournament.prizePool}
           entryFee={tournament.entryFee}
@@ -25,8 +27,9 @@ export function TournamentCard({ tournament }: { tournament: Tournament }) {
           capacity={tournament.capacity}
         />
       </div>
-      <div className="bg-greeny h-0.5"></div>
-      <div className="bg-mediumgray flex-grow flex flex-row justify-between items-center">
+      <div className="h-2" />
+      <div className="bg-greeny h-0.5" />
+      <div className="flex-grow flex flex-row justify-between items-center">
         <div className="flex flex-col ml-3">
           <text className="text-[12px] text-whity">Starting in</text>
           <CountdownTimer targetDate={16874041211000} />

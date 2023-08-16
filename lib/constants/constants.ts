@@ -64,7 +64,7 @@ export const TOURNAMENTS: Tournament[] = [
     capacity: 16,
   },
   {
-    name: "NBA2K23 TOURNAMENT",
+    name: "NBA 2K23",
     imageName: "tournament_nba",
     prizePool: "$52",
     entryFee: "$4",
@@ -80,7 +80,7 @@ export const TOURNAMENTS: Tournament[] = [
     capacity: 16,
   },
   {
-    name: "NBA2K23 TOURNAMENT",
+    name: "NBA 2K23",
     imageName: "tournament_nba",
     prizePool: "$52",
     entryFee: "$4",
@@ -96,7 +96,7 @@ export const TOURNAMENTS: Tournament[] = [
     capacity: 16,
   },
   {
-    name: "NBA2K23 TOURNAMENT",
+    name: "NBA 2K23",
     imageName: "tournament_nba",
     prizePool: "$52",
     entryFee: "$4",
@@ -104,7 +104,7 @@ export const TOURNAMENTS: Tournament[] = [
     capacity: 6,
   },
   {
-    name: "NBA2K23 TOURNAMENT",
+    name: "NBA 2K23",
     imageName: "tournament_nba",
     prizePool: "$52",
     entryFee: "$4",
@@ -112,7 +112,7 @@ export const TOURNAMENTS: Tournament[] = [
     capacity: 6,
   },
   {
-    name: "NBA2K23 TOURNAMENT",
+    name: "NBA 2K23",
     imageName: "tournament_nba",
     prizePool: "$52",
     entryFee: "$4",
