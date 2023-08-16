@@ -18,6 +18,7 @@ export default function Footer() {
         <VerticalNav />
         <Links />
       </div>
+      <br />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import Card from "./Card";
 
 export default function BannerSection() {
   return (
-    <div className="w-screen h-96 flex flex-col justify-center">
-      <Card className="m-[10%] w-[80%] h-40 bg-greeny flex sm:flex-row flex-col items-center justify-between">
+    <div className="w-screen flex flex-col justify-center">
+      <Card className="m-[10%] w-[80%] h-44 bg-greeny flex sm:flex-row flex-col items-center justify-between">
         <div className="ml-0 sm:ml-[5%] sm:mt-0 mt-3 sm:w-auto w-72">
           <h2 className="sm:text-3xl text-xl font-semibold tracking-tight italic text-center">
             Play your favorite games
