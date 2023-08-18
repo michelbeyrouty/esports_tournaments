@@ -1,8 +1,8 @@
 "use client";
 import WorkCard from "./WorkCard";
-import hiwProfile from "@/assets/images/hiw_profile.svg";
-import hiwController from "@/assets/images/hiw_controller.svg";
-import hiwTrophy from "@/assets/images/hiw_trophy.svg";
+import hiwProfile from "@/assets/images/hiw_profile.png";
+import hiwController from "@/assets/images/hiw_controller.png";
+import hiwTrophy from "@/assets/images/hiw_trophy.png";
 
 export default function HowItWorks() {
   return (
